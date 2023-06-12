@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basta Poloin, Iyu-Tea!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FFE5B4;
+    }
+
+    .wrapper {
+      margin: 5px 2px;
+      width: 72%;
+    }
+
+    img {
+      height: 10vh;
+      float: left;
+      max-width: 200px;
+    }
+
+    .text-box {
+      color: white;
+    }
+
+    .text-box h1 {
+      font-size: 42px;
+      color: rgb(10, 54, 48);
+      font-weight: 1000;
+    }
+
+    .nav-area {
+      list-style: none;
+      margin: 5px 5px;
+    }
+
+    .nav-area li {
+      display: inline-block;
+    }
+
+    .nav-area li a {
+      color: rgb(10, 54, 48);
+      text-decoration: none;
+      padding: 0px 10px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .nav-area li a:hover {
+      background: rgb(138, 143, 143);
+      color: #333;
+    }
+
+    marquee {
+      font-size: 24px;
+      font-weight: 200;
+      color: rgb(232, 171, 171);
+      font-family: cursive;
+      background-color: rgb(10, 54, 48);
+    }
+
+    #home {
+      height: 100vh;
+      background-image: url(bg.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #home .inner-width {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    #home .content {
+      padding-left: 50px;
+      text-align: left;
+      width: 50%;
+    }
+
+    #home .content h1 {
+      font-size: 80px;
+      line-height: 100px;
+      font-weight: 900;
+      letter-spacing: 18px;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #9bb41a;
+    }
+
+    #home .content h1 span {
+      color: #fff;
+    }
+
+    #home .content p {
+      font-size: 17px;
+      margin: 20px 0;
+      line-height: 30px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    #home .content button {
+      padding: 13px 20px;
+      outline: none;
+      border: none;
+      background-color: #9bb41a;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      letter-spacing: 3px;
+      font-weight: 900;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #home .content button:hover {
+      background-color: #fff;
+      color: #9bb41a;
+    }
+
+    #contact {
+      height: 100vh;
+      background-image: url(about.jpg);
+      background-position: center;
+      background-size: cover;
+      padding-top: 150px;
+    }
+
+    #contact .contact-container {
+      width: 50%;
+      float: right;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      color: #9bb41a;
+      font-size: 60px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+    }
+
+    .contact-container h1 span {
+      color: #3f3f3f;
+    }
+
+    .contact-container p {
+      color: #3f3f3f;
+      font-family: 'Raleway', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 2px;
+    }
+
+    .contact-container button {
+      margin-top: 40px;
+      padding: 15px 18px;
+      background-color: #3f3f3f;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .contact-container button:hover {
+      background-color: #9bb41a;
+      font-weight: 900;
+    }
+
+    .text-footer {
+      background-color: rgb(10, 54, 48);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-family: "Ubuntu", sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="logo.png">
+    <div class="text-box">
+      <h1><i>Basta Polo'in, Iyu-Tea</i></h1>
+      <ul class="nav-area">
+        <li><a href="onlinetech.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <marquee scrollamount="10" width="1421">Finer than Finest Tea!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❤️FAM FE DAN❤️&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmmm, Sherep!</marquee>
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1><span>Basta </span>Polo'in<br>Iyu<span>Tea</span></h1>
+        <p>Finer than Finest Tea!</p>
+        <a href="about.html"><button class="btn btn-primary">More Details</button></a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact-container">
+      <h1><span>Tea </span>Hea<span>ven</span></h1>
+      <p>Basta Polo'in, IyuTea is derived from the common expression of every Pagbilaowins, specifically, in Brgy. Ilayang Polo, Pagbilao, Quezon. If there are some queries and other information you want to know, just contact the page and they will respond faster.</p>
+      <a href="contact.html"><button class="btn btn-primary">Contact Us</button></a>
+    </div>
+  </section>
+  <footer class="background">
+    <p class="text-footer">&copy; Copyright 2023 -
+      Basta Polo'in, Iyu-Tea | Website by Mauren Norbe | CpE II-GE Student</p>
+  </footer>
+</body>
+</html>
